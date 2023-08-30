@@ -42,7 +42,6 @@ const Hero = () => {
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
           >
             <h1>
               Built on a <span>Robust</span> and <span>Powerful</span> Platform.
@@ -57,7 +56,6 @@ const Hero = () => {
             variants={popUpAnimationVariants}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
             className="features"
           >
             <ul>

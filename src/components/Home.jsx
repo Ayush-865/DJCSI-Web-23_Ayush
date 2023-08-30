@@ -40,7 +40,6 @@ const Home = () => {
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
           >
             <h1>
               Buy and Trade <span>Cryptos</span> like Never Before

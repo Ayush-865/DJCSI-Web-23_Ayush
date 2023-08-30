@@ -53,22 +53,19 @@ const Price = () => {
         <div className="currency-container">
           <motion.div variants={popUpAnimationVariants}
             initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }} className="currency-card">
+            whileInView="animate" className="currency-card">
             <h1>United States Dollar</h1>
             <p>$ {usdPrice}</p>
           </motion.div>
           <motion.div variants={popUpAnimationVariants}
             initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }} className="currency-card">
+            whileInView="animate" className="currency-card">
             <h1>British Pound Sterling</h1>
             <p>&pound; {gbpPrice}</p>
           </motion.div>
           <motion.div variants={popUpAnimationVariants}
             initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }} className="currency-card">
+            whileInView="animate" className="currency-card">
             <h1>Euro</h1>
             <p>&euro; {eurPrice}</p>
           </motion.div>

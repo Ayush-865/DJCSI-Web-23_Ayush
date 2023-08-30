@@ -18,8 +18,6 @@ const App = () => {
         <Cards/>
         <Price/>
         <ContactUs/>
-        <Routes>
-        </Routes>
       </Router>
     </>
   )
