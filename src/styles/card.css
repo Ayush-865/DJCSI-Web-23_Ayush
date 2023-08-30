@@ -1,0 +1,179 @@
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(20, 45, 93, 1) 40%,
+    rgba(20, 45, 93, 1) 100%,
+    rgba(0, 33, 97, 1) 100%
+  );
+  width: 100%;
+  height: fit-content;
+}
+
+.news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20vw;
+}
+
+.news h1 {
+  font-size: 2.5vw;
+  color: white;
+}
+
+.news span {
+  color: #2af4ff;
+}
+
+.news p {
+  width: 30%;
+  font-size: 1.2vw;
+  color: white;
+}
+
+.cards {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  transition: all 1s ease;
+  padding: 0 5vw;
+}
+
+.card {
+  flex: 1 1 200px;
+  height: fit-content;
+  margin: 20px;
+  background-color: black;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 45%;
+  overflow: hidden;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  margin: 1vw 2vw;
+}
+
+.info h2 {
+  font-size: 1.8vw;
+  color: white;
+}
+
+.info p {
+  font-size: 1vw;
+  color: white;
+  padding-bottom: 2vw;
+  padding-top: 0.5vw;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid white;
+  padding: 1vw;
+}
+
+.profile img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.profile-info {
+  color: white;
+  padding: 0 2vw;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    padding: 0 3vw;
+  }
+
+  .news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+  }
+  .news h1 {
+    font-size: 7vw;
+    color: white;
+  }
+  .news p {
+    width: 80%;
+    font-size: 3.5vw;
+    color: white;
+    padding: 0 4vw;
+  }
+  .info {
+    margin: 2vw 4vw;
+  }
+
+  .info h2 {
+    font-size: 4.5vw;
+    color: white;
+  }
+
+  .info p {
+    font-size: 3vw;
+    color: white;
+    padding-bottom: 3vw;
+    padding-top: 1vw;
+  }
+}
+
+@media only screen and (max-width: 913px) and (orientation: landscape) {
+  .news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+  }
+
+  .news h1 {
+    font-size: 5vw;
+    color: white;
+  }
+  .news p {
+    width: 60%;
+    font-size: 2vw;
+    color: white;
+  }
+  .info h2 {
+    font-size: 2.2vw;
+  }
+
+  .info p {
+    font-size: 1.5vw;
+    color: white;
+    padding-bottom: 3vw;
+    padding-top: 1vw;
+  }
+
+  .profile-info{
+    font-size: 1.3vw;
+    color: white;
+    padding: 0 2vw;
+  }
+}

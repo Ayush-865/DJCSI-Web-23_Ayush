@@ -1,0 +1,160 @@
+.container {
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  padding: 0 3vw;
+  background-color: #142d5d;
+  border-bottom: 1.5px solid white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2af4ff;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 4vw;
+}
+
+.navbar a {
+  padding: 5px 5px;
+  color: white;
+}
+
+.ani-1 {
+  position: relative;
+}
+
+.ani-1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  border-radius: 1px;
+  width: 0%;
+  background-color: #2af4ff;
+  transition: all ease 0.5s;
+}
+
+.ani-1:hover::after {
+  width: 100%;
+}
+
+.main ul {
+  display: flex;
+  align-items: center;
+}
+
+.main li {
+  margin-left: 20px;
+}
+
+.main i{
+  color: #2af4ff;
+}
+
+.hamburger {
+  color: #2af4ff;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 101;
+  display: none;
+}
+
+@media only screen and (max-width: 913px) and (orientation: landscape) {
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 250px;
+    background-color: #2af4ff;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    overflow: hidden;
+  }
+  .navbar ul {
+    gap: 1vw;
+  }
+  .navbar a {
+    display: block;
+    margin-left: 0.5em;
+    transition: all 0.5s ease;
+    font-size: 1rem;
+    color: #142d5d;
+  }
+}
+@media (max-width: 980px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 150px;
+    background-color: #2af4ff;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    overflow: hidden;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    gap: 1vw;
+  }
+
+  .navbar a {
+    display: block;
+    margin-left: 0.5em;
+    padding: 10px 25px;
+    transition: all 0.5s ease;
+    font-size: 1.3rem;
+    color: #142d5d;
+  }
+  .ani-1::after {
+    background-color: black;
+  }
+  .navbar a:hover {
+    transform: translateY(5px);
+  }
+
+  /* Show the open menu */
+  .navbar.open {
+    right: 2%;
+  }
+}
+@media (max-width: 600px) {
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}

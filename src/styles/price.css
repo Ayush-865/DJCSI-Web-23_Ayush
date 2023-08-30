@@ -1,0 +1,78 @@
+.price-container {
+  width: 100%;
+  height: fit-content;
+  padding: 1.5rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(20, 45, 93, 1) 40%,
+    rgba(20, 45, 93, 1) 100%,
+    rgba(0, 33, 97, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.currency-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.currency-info h1 {
+  font-size: 3vw;
+  margin: 0 1vw;
+  color: #2af4ff;
+}
+
+.currency-container {
+    width:clamp(50%, 500px, 100%);
+    height: auto;
+    margin: 2vw;
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.currency-card {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.currency-card h1 {
+  font-size: 2vw;
+}
+
+.currency-card p {
+  font-size: 1.5vw;
+}
+
+
+@media (max-width: 600px) {
+    .currency-info h1 {
+        font-size: 5vw;
+        margin: 0 4vw;
+        color: #2af4ff;
+      }
+    .currency-card h1 {
+        font-size: 4vw;
+      }
+      
+      .currency-card p {
+        font-size: 4vw;
+      }
+}
+
