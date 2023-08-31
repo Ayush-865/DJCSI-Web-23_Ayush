@@ -17,21 +17,6 @@ const fadeInAnimationVariants = {
     },
   }),
 };
-const fadexInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    x: 100,
-  },
-  animate: () => ({
-    opacity: 1,
-    x: 0,
-    transition: {
-      delay: 0.2,
-      duration: 1,
-      ease: "easeOut",
-    },
-  }),
-};
 const popUpAnimationVariants = {
   initial: {
     opacity: 0,
@@ -86,15 +71,11 @@ const Hero = () => {
             </ul>
           </motion.div>
         </div>
-        <motion.div
-          variants={fadexInAnimationVariants}
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
+        <div
           className="hero-2"
         >
           <img src="./pc.jpg" alt="logo" />
-        </motion.div>
+        </div>
       </div>
     </>
   );
