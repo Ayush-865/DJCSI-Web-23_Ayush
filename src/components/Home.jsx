@@ -3,7 +3,7 @@ import "../styles/home.css";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
-const pdf_file_url = "http://localhost:3000/ayush_resume.pdf";
+const pdf_file_url = "https://ayush-csi-coinnexus.netlify.app/ayush_resume.pdf";
 
 const fadeInAnimationVariants = {
   initial: {
